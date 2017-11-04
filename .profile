@@ -1,7 +1,7 @@
 alias ls='ls -FG'
 alias shred='rm -P'
 export LSCOLORS=ExGxcxdxCxegedabagacad
-export PS1="[\e[1;36m\W\e[0m]\$ "
+export PS1="[\[\e[1;36m\]\W\[\e[0m\]]\$ "
 export EDITOR=/usr/bin/vim
 
 export PROJECTS=${HOME}/projects
