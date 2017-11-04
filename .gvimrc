@@ -3,3 +3,4 @@
 set guioptions-=T        " Toolbar schmoolbar!
 set guifont=Consolas:h12 " Use this font when gvim opens
 set cursorline           " Highlight the current line
+cd ~/projects
