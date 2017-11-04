@@ -3,7 +3,7 @@
     smudge = git-lfs smudge %f
     required = true
 [user]
-	name = Michael Fairchild
+    name = Michael Fairchild
     email = mjfairch@gmail.com
 [alias]
     visual = !gitk
@@ -18,4 +18,4 @@
 [core]
     editor = /usr/bin/vim
 [gui]
-	recentrepo = /Users/mike/Google Drive/code/projects/algorithms
+    recentrepo = /Users/mike/Google Drive/code/projects/algorithms

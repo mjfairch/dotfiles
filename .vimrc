@@ -1,23 +1,25 @@
-syntax on             " enable syntax highlighting
-set background=dark   " hint to colorscheme for its choice of colors
-color ghostbuster     " use this color scheme when vim opens
-set autoindent        " new line mimics leading whitespace of preceding line
-set expandtab         " replace tabs with spaces
-set tabstop=4         " number of spaces per tab
+syntax on             " Enable syntax highlighting
+set background=dark   " Hint to colorscheme for its choice of colors
+color ghostbuster     " Use this color scheme when vim opens
+set autoindent        " New line mimics leading whitespace of preceding line
+set expandtab         " Peplace tabs with spaces
+set tabstop=4         " Number of spaces per tab
 set shiftwidth=4      " When using indent operator >
-set history=1000      " command history; :help history
-set showcmd           " show incomplete commands
-set number            " line numbering
-set ruler             " show row/column cursor position
-set cc=80             " colorize this column
-set tw=0              " textwidth, used for wrapping; 0 prevents wrapping.
-set formatoptions+=t  " wrap at textwidth during insert mode
-set hidden            " buffer hiding without saves
-set showmatch         " hightlight matching brackets
-set incsearch         " show initial match as search is being typed
-set fileformat=unix   " end lines with UNIX LF (omit CR)
-set clipboard=unnamed " enable copying to OS clipboard
+set history=1000      " Command history; :help history
+set showcmd           " Show incomplete commands
+set number            " Line numbering
+set ruler             " Show row/column cursor position
+set cc=80             " Colorize this column
+set tw=0              " Textwidth, used for wrapping; 0 prevents wrapping.
+set formatoptions+=t  " Wrap at textwidth during insert mode
+set hidden            " Buffer hiding without saves
+set showmatch         " Hightlight matching brackets
+set incsearch         " Show initial match as search is being typed
+set fileformat=unix   " End lines with UNIX LF (omit CR)
+set clipboard=unnamed " Enable copying to OS clipboard
 set backspace=indent,eol,start " behavior for backspace key
+set list
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 
 " http://joelonsoftware.com/articles/Unicode.html
 if has("multi_byte")
