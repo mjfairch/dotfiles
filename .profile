@@ -13,3 +13,6 @@ export CATALINA_HOME=/tomcat
 export AXIS2_HOME=${HOME}/development/axis2-1.7.6
 
 export PATH=$PATH:${HOME}/bin:${PROJECTS}/cltools:${HOME}/miniconda3/bin
+
+n=`python -c "import random; print random.randint(1,22)"`
+cat ${PROJECTS}/dotfiles/cats/cat$n.txt
