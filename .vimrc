@@ -1,9 +1,9 @@
 syntax on             " enable syntax highlighting
 set background=dark   " hint to colorscheme for its choice of colors
-color ghostbuster     " default color scheme
+color ghostbuster     " use this color scheme when vim opens
 set autoindent        " new line mimics leading whitespace of preceding line
 set expandtab         " replace tabs with spaces
-set tabstop=4         " 4 spaces per tab
+set tabstop=4         " number of spaces per tab
 set shiftwidth=4      " When using indent operator >
 set history=1000      " command history; :help history
 set showcmd           " show incomplete commands
@@ -17,6 +17,7 @@ set showmatch         " hightlight matching brackets
 set incsearch         " show initial match as search is being typed
 set fileformat=unix   " end lines with UNIX LF (omit CR)
 set clipboard=unnamed " enable copying to OS clipboard
+set backspace=indent,eol,start " behavior for backspace key
 
 " http://joelonsoftware.com/articles/Unicode.html
 if has("multi_byte")
@@ -29,13 +30,8 @@ if has("mouse")
     set mouse=a       " allow mouse clicks to move cursor in all modes
 endif
 
-
-" allow backspace key to wrap around lines
-set backspace=indent,eol,start
 " For Python files, convert tabs to 4 spaces
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
+
 " On buffer save, remove trailing whitespace on buffer save
 autocmd BufWritePre * %s/\s\+$//e
-
-"set lines=55
-"set columns=85
