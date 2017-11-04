@@ -41,7 +41,7 @@ To colorize the prompt, insert color codes into the `PS1` variable.  Color codes
 ```shell
 $ export PS1="\e[1;33m\w\e[0m\$ "
 ```
-Here we switched into bold yellow using `\e[1;33m`, inserted the working directory with `\w`, switched back to the terminal's default colors with `\e[0m`, and then inserted the prompt symbol with `\$`.  If you mess up your prompt while experimenting, you can reset to a simple prompt with the default color by issuing:
+Here we switched into bold yellow using `\e[1;33m`, inserted the working directory with `\w`, switched back to the terminal's default colors with `\e[0m`, and then inserted the prompt symbol with `\$`.  If you mess up your prompt while experimenting, you can reset to a simple prompt with the default colors by issuing:
 
 ```shell
 $ export PS1="\e[0m\$ "
@@ -82,5 +82,5 @@ The format of a background color is `\e[COLORm` where `COLOR` is one of
 For example, to have the working directory shown as bold yellow on a blue background, enclosed in default-colored brackets, followed by a default-colored prompt symbol, issue:
 
 ```shell
-export PS1="[\e[44m\e[1;33m\w\e[0m]\$ "
+$ export PS1="[\e[44m\e[1;33m\w\e[0m]\$ "
 ```
