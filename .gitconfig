@@ -18,3 +18,5 @@
 [core]
     editor = /usr/bin/vim
 [gui]
+[push]
+	default = simple
