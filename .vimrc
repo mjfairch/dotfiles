@@ -18,7 +18,7 @@ set incsearch         " Show initial match as search is being typed
 set fileformat=unix   " End lines with UNIX LF (omit CR)
 set clipboard=unnamed " Enable copying to OS clipboard
 set backspace=indent,eol,start " behavior for backspace key
-set list
+"set list
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 
 " http://joelonsoftware.com/articles/Unicode.html
@@ -34,6 +34,7 @@ endif
 
 " For Python files, convert tabs to 4 spaces
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
+autocmd Filetype html setlocal expandtab tabstop=2 shiftwidth=2
 
 " On buffer save, remove trailing whitespace on buffer save
 autocmd BufWritePre * %s/\s\+$//e
