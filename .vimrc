@@ -20,6 +20,7 @@ set clipboard=unnamed " Enable copying to OS clipboard
 set backspace=indent,eol,start " behavior for backspace key
 "set list
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+let g:netrw_dirhistmax=0 " Disable network read/write history
 
 " http://joelonsoftware.com/articles/Unicode.html
 if has("multi_byte")
