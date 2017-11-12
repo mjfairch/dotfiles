@@ -15,4 +15,4 @@ export AXIS2_HOME=${HOME}/development/axis2-1.7.6
 
 export PATH=$PATH:${HOME}/bin:${PROJECTS}/cltools:${HOME}/miniconda3/bin
 
-showcat  # Defined in cltools project
+catcat  # Defined in cltools project
