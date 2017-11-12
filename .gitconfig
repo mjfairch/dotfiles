@@ -11,7 +11,7 @@
     conflict = !git ls-files -u | cut -f2 | sort -u # files in merge conflict
     wc = diff-tree --no-commit-id --name-only -r  # git wc [commit number]
     ls = ls-tree -r --name-only --full-name master
-    log1 = log --pretty=oneline
+    log1 = log --oneline
 [diff]
     tool = vimdiff
 [merge]
