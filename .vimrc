@@ -1,6 +1,6 @@
 syntax on             " Enable syntax highlighting
 set background=dark   " Hint to colorscheme for its choice of colors
-"color ghostbuster     " Use this color scheme when vim opens
+color ghostbuster     " Use this color scheme when vim opens
 set autoindent        " New line mimics leading whitespace of preceding line
 set expandtab         " Peplace tabs with spaces
 set tabstop=4         " Number of spaces per tab

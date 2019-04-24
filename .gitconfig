@@ -1,23 +1,19 @@
-[filter "lfs"]
-    clean = git-lfs clean %f
-    smudge = git-lfs smudge %f
-    required = true
 [user]
-    name = Michael Fairchild
-    email = mjfairch@gmail.com
-[alias]
-    visual = !gitk
-    mlog = !git log -20 --graph --all --pretty=format:'%C(auto)%h %C(auto)%an %C(auto)%cr %C(auto)%d : %C(auto)%s'
-    conflict = !git ls-files -u | cut -f2 | sort -u # files in merge conflict
-    wc = diff-tree --no-commit-id --name-only -r  # git wc [commit number]
-    ls = ls-tree -r --name-only --full-name master
-    log1 = log --oneline
-[diff]
-    tool = vimdiff
-[merge]
-    tool = vimdiff
+	name = Michael Fairchild
+	email = mjfairch@gmail.com
 [core]
     editor = /usr/bin/vim
-[gui]
-[push]
-	default = simple
+[alias]
+    st = status
+    co = checkout
+    br = branch -va
+    mlog = !git log -20 --graph --all --pretty=format:'%C(auto)%h %C(auto)%an %C(auto)%cr %C(auto)%d : %C(auto)%s'
+    lg = !git -P log --graph --oneline
+    ls = ls-tree -r --name-only --full-name       # git ls [branch]
+    wc = diff-tree --no-commit-id --name-only -r  # git wc [object]
+    mc = !git ls-files -u | cut -f2 | sort -u     # files in merge conflict
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
