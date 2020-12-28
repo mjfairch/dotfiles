@@ -4,7 +4,7 @@ alias shred='rm -P'
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export LSCOLORS=dxGxcxdxCxegedabagacad
 #export PS1="[\[\e[0;36m\]\W\[\e[0m\]]\$ "
-export PS1="\w$ "
+export PS1="%~ "
 export EDITOR=/usr/bin/vim
 
 export PROJECTS=${HOME}/projects
