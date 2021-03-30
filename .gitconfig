@@ -8,7 +8,8 @@
     co = checkout
     br = branch -va
     mlog = !git log -20 --graph --all --pretty=format:'%C(auto)%h %C(auto)%an %C(auto)%cr %C(auto)%d : %C(auto)%s'
-    lg = !git -P log --graph --oneline
+    #lg = !git -P log --graph --oneline
+    lg = !git -P log --format='%C(bold yellow)%h %C(bold green)%ci %C(bold cyan)%>(25)%an %C(dim white)%s %C(bold red)%d%Creset'
     ls = ls-tree -r --name-only --full-name       # git ls [branch]
     wc = diff-tree --no-commit-id --name-only -r  # git wc [object]
     mc = !git ls-files -u | cut -f2 | sort -u     # files in merge conflict
