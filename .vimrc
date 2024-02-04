@@ -1,9 +1,10 @@
 syntax on             " Enable syntax highlighting
+set belloff=all       " Disable all annoying error bells
 set background=dark   " Hint to colorscheme for its choice of colors
 color OceanicNext     " Use this color scheme when vim opens
 set autoindent        " New line mimics leading whitespace of preceding line
 set expandtab         " Peplace tabs with spaces
-set tabstop=2         " Number of spaces per tab
+set tabstop=4         " Number of spaces per tab
 set shiftwidth=4      " When using indent operator >
 set history=1000      " Command history; :help history
 set showcmd           " Show incomplete commands
